@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAEK SEUNG TAK - Visual & Motion Designer Portfolio</title>
+  
+  <!-- 1. Pretendard 폰트 & Swiper.js CSS CDN -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- 2. 외부 스타일시트 연결 -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- ==================== [0. GNB 상단 고정 헤더] ==================== -->
+  <header class="gnb">
+    <div class="gnb-inner">
+      <a href="#hero" class="brand-logo">BAEK SEUNG TAK <span>/ DESIGNER</span></a>
+      <nav class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a href="#experiment">EXPERIMENT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== [1. HERO SECTION (100vh)] ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-frame">
+        <!-- 배경 쇼릴 비디오 (본인의 쇼릴 mp4 경로로 변경 가능) -->
+        <video class="hero-video" autoplay muted loop playsinline poster="./images/bg_showreel_2026_thumb.png">
+          <source src="./videos/bg_showreel_2026.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <!-- 뷰파인더 장식 요소 (첫 화면 시안 디테일 반영) -->
+        <span class="hud-corner top-left">[ &nbsp; ]</span>
+        <span class="hud-top-center">60FPS</span>
+        <span class="hud-corner top-right">REEL_26</span>
+        <span class="hud-cross left">+</span>
+        <span class="hud-cross right">+</span>
+
+        <!-- 중앙 메인 타이포그래피 -->
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="solid-text">BST</span>
+            <span class="mixed-text"><em class="outline-text">VISUAL &</em> MOTION</span>
+            <span class="solid-text">DESIGN</span>
+          </h1>
+          <p class="hero-subtitle">SELECTED WORKS / PORTFOLIO</p>
+        </div>
+      </div>
+
+      <!-- 하단 쇼릴 상태바 & 스크롤 유도 -->
+      <div class="hero-bottom-bar">
+        <div class="showreel-status">
+          <span class="status-label">PLAYING SHOWREEL (0:45) 🔊</span>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+        <a href="#about" class="scroll-down">
+          <span class="mouse-icon"></span>
+          <span class="scroll-text">SCROLL TO<br>EXPLORE</span>
+        </a>
+      </div>
+    </section>
+
+  <!-- ==================== [2. ABOUT & SKILL MATRIX] ==================== -->
+<section class="about-section" id="about">
+    <div class="section-container">
+        <span class="section-eyebrow">01 / IDENTITY & CAPABILITY</span>
+
+        <!-- 📌 [1] 상단: 타이틀 및 소개글 + 우측 그래픽 (2단 레이아웃) -->
+        <div class="about-header-horizontal">
+            <div class="about-header-left">
+                <h2 class="about-heading">
+                    시각적 몰입감과<br>
+                    영상을 설계하는<br>
+                    <span class="accent-color">멀티 디자이너</span>입니다.
+                </h2>
+                
+                <div class="about-desc-wrap">
+                    <p class="about-desc">
+                        브랜드의 세계관을 구축하는 그래픽 디자인부터 구매 전환을 이끄는 상세페이지 설계, 시선을 사로잡는 모션 그래픽과 영상 편집, 그리고 이를 웹상에 구현하는 프론트엔드 퍼블리싱까지—매체의 경계를 넘나들며 일관된 비주얼 솔루션을 제안합니다.
+                    </p>
+                    <div class="workflow-steps">
+                        <span>기획·브랜딩</span> ➔ <span>인쇄·상세페이지</span> ➔ <span>영상·모션</span> ➔ <span>웹 구현</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 🎨 우측에 삽입되는 웹사이트 분위기와 어우러지는 3D 그래픽 이미지 영역 -->
+            <div class="about-header-graphic">
+                <img src="./images/about_hero_graphic.png" alt="Abstract 3D Digital Artwork" class="graphic-media">
+            </div>
+        </div>
+
+        <!-- 📌 [2] 하단: 2단 그리드 배치 (좌측 이력서 / 우측 스킬 카드) -->
+        <div class="about-grid">
+            
+            <!-- 👉 좌측: 이력서 영역 -->
+            <div class="resume-column">
+                <div class="resume-summary" id="resume-adjusted">
+                    
+                    <!-- 1. 학력 -->
+                    <div class="resume-group">
+                        <h4 class="resume-title">EDUCATION</h4>
+                        <div class="resume-item">
+                            <span class="year">2008.8</span>
+                            <span class="desc">&nbsp;한국외국어대학교 글로벌캠퍼스 졸업</span>
+                        </div>
+                    <div class="resume-item">
+                            <span class="year">2026.05 - 현재</span>
+                            <span class="desc">이젠컴퓨터학원</span>
+                    </div>
+                  </div>
+
+                    <!-- 2. 경력 -->
+                    <div class="resume-group">
+                        <h4 class="resume-title">EXPERIENCE</h4>
+                        
+                        <div class="resume-item">
+                            <span class="year"></span>
+                            <span class="desc"></span>
+                        </div>
+                    </div>
+
+                    <!-- 3. 자격증 -->
+                    <div class="resume-group">
+                        <h4 class="resume-title">LICENSE</h4>
+                        <div class="resume-item">
+                            <span class="year">2026.10</span>
+                            <span class="desc">Digital Video Using Adobe Premiere Pro</span>
+                        </div>
+                        <div class="resume-item">
+                            <span class="year"></span>
+                            <span class="desc"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- 4. 기술(능력) 그래프 -->
+                    <div class="resume-group">
+                        <h4 class="resume-title">SKILLS</h4>
+                        <div class="skill-graph-wrap">
+                            
+                            <!-- 포토샵 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Photoshop</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- 일러스트레이터 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Illustrator</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- 피그마 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- 프리미어 프로 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Premiere Pro</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- 애프터 이펙트 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">After Effects</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- // resume-column 닫기 -->
+
+            <!-- 👉 우측: 툴 & 기술 스택 매트릭스 -->
+            <div class="skill-matrix">
+                
+                <!-- 카드 1: 그래픽 디자인 -->
+                <div class="skill-box">
+                    <span class="skill-category">GRAPHIC & UI/UX DESIGN</span>
+                    <h3 class="skill-title">시각·브랜딩 및 레이아웃 설계</h3>
+                    <p class="skill-detail">로고 아이덴티티, 인쇄/편집물(리플렛·명함·포스터), 제품 패키지 및 이커머스 상세페이지 UI/UX 디자인</p>
+                    <div class="tool-badges">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+                
+                <!-- 카드 2: 모션 및 영상 편집 -->
+                <div class="skill-box">
+                    <span class="skill-category">MOTION & VIDEO EDITING</span>
+                    <h3 class="skill-title">영상 편집 및 모션 그래픽 연출</h3>
+                    <p class="skill-detail">유튜브 숏폼 기획·대본·컷편집, 키네틱 타이포그래피, 비주얼 이펙트 및 브랜드 쇼릴 영상 제작</p>
+                    <div class="tool-badges">
+                        <span>After Effects</span>
+                        <span>Premiere Pro</span>
+                        <span>CapCut</span>
+                    </div>
+                </div>
+
+                <!-- 카드 3: 웹 퍼블리싱 -->
+                <div class="skill-box">
+                    <span class="skill-category">WEB PUBLISHING</span>
+                    <h3 class="skill-title">인터랙티브 웹 퍼블리싱</h3>
+                    <p class="skill-detail">시맨틱 마크업 기반 반응형 웹 레이아웃 구축 및 스크롤·슬라이드 인터랙션 구현</p>
+                    <div class="tool-badges">
+                        <span>HTML5 / CSS3</span>
+                        <span>JavaScript</span>
+                        <span>GSAP</span>
+                        <span>Swiper.js</span>
+                    </div>
+                </div>
+
+            </div> <!-- // skill-matrix 닫기 -->
+
+        </div> <!-- // about-grid 닫기 -->
+    </div>
+</section>
+
+    <!-- ==================== [3. WORK SHOWCASE (탭 필터 슬라이더)] ==================== -->
+    <section class="work-section" id="work">
+      <div class="section-container">
+        <span class="section-eyebrow center">02 / SELECTED PROJECTS</span>
+        <h2 class="section-title">3. WORK SHOWCASE</h2>
+
+        <!-- 상단 탭 메뉴 & 슬라이더 화살표 -->
+        <div class="work-controls">
+          <div class="tab-group" role="tablist">
+            <button class="tab-btn active" data-filter="part1" role="tab">PART 01. BRAND & E-COMMERCE</button>
+            <button class="tab-btn" data-filter="part2" role="tab">PART 02. EDITORIAL & PROMO</button>
+            <button class="tab-btn" data-filter="part3" role="tab">PART 03. KEY VISUAL & ARTWORK</button>
+            <button class="tab-btn" data-filter="all" role="tab">ALL WORKS</button>
+          </div>
+
+          
+        </div>
+
+        <!-- Swiper 메인 컨테이너 -->
+        <div class="swiper work-swiper">
+          <div class="swiper-nav-btns">
+            <button class="nav-btn prev-btn" aria-label="이전 슬라이드">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="nav-btn next-btn" aria-label="다음 슬라이드">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+          <div class="swiper-wrapper">
+
+            <!-- [PART 01: 브랜드 & 상세페이지] -->
+          <!-- [PART 01: 브랜드 & 상세페이지] 첫 번째 카드 복원 -->
+<div class="swiper-slide" data-category="part1">
+  <article class="work-card" onclick="openModal('./images/part1_LEVANE_catalog_cover.png', 
+      './images/part1_levane_sage vail.png', './images/part1_levane_olive dusk.png',
+     './images/part1_levane_creme lumiere.png', './images/part1_levane_blush whisper.png', './images/part1_levane_coral ember.png',
+     './images/part1_levane_champagne bloom.png', './images/part1_levane_nocturne olive.png', './images/part1_levane_jardin silencieux.png', './images/part1_LEVANE_collection.png')">
+    <div class="card-thumb">
+      <img src="./images/part1_levane_thumb.png" onerror="this.src='https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80'" alt="LÉVANE 향수 브랜딩">
+    </div>
+    <div class="card-body">
+      <span class="part-badge">PART 01. BRAND & E-COMMERCE</span>
+      <h3 class="card-title">LÉVANE 프리미엄 향수 브랜딩 및 제품 카탈로그</h3>
+      <p class="card-desc">자연의 우아함을 담은 보태니컬 아이덴티티 수립, 8종 시그니처 라인업 카탈로그 및 패키지 디자인 기획·제작</p>
+      <div class="card-meta">
+        <span class="meta-tag">기여도 100%</span>
+        <span class="meta-tag">Generative AI</span>
+        <span class="meta-tag">Photoshop</span>
+        <span class="meta-tag">Illustrator</span>
+        
+      </div>
+    </div>
+  </article>
+</div>
+
+            <div class="swiper-slide" data-category="part1">
+              <article class="work-card" onclick="openModal('./images/part1_shave_detail.jpg')">
+                <div class="card-thumb">
+                  <img src="./images/part1_shave_thumb.png" onerror="this.src='https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=800&q=80'" alt="데일리 쉐이브 상세페이지">
+                </div>
+                <div class="card-body">
+                  <span class="part-badge">PART 01. BRAND & E-COMMERCE</span>
+                  <h3 class="card-title">DAILY SHAVE 남성 그루밍 쉐이빙 폼 상세페이지</h3>
+                  <p class="card-desc">타겟 고객의 페인 포인트 공감부터 제품 특장점 비교표, 사용 리뷰까지 구매 전환율을 높이는 설득형 레이아웃 설계</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">기여도 100%</span>
+                    <span class="meta-tag">Generative AI</span>
+                    <span class="meta-tag">Photoshop</span>
+                    <span class="meta-tag">Illustrator</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide" data-category="part1">
+              <article class="work-card" onclick="openModal('./images/part1_iope_detail.jpg')">
+                <div class="card-thumb">
+                  <img src="./images/part1_iope_lineup_thumb.png" onerror="this.src='https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80'" alt="KENSINGTON 가죽 지갑 브랜딩">
+                </div>
+                <div class="card-body">
+                  <span class="part-badge">PART 01. BRAND & E-COMMERCE</span>
+                  <h3 class="card-title">IOPE 맨 레티놀 올인원 안티에이징 상세페이지</h3>
+                  <p class="card-desc">커스텀 3D 성분 모델링과 직관적인 기능성 혜택 아이콘을 활용하여, 남성 스킨케어 제품의 전문성과 신뢰도를 강조한 레이아웃 설계</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">기여도 100%</span>
+                    <span class="meta-tag">Generative AI</span>
+                    <span class="meta-tag">Illustrator</span>
+                    <span class="meta-tag">Photoshop</span>
+                    <span class="meta-tag">Figma</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- [PART 02: 인쇄 & 프로모션 콘텐츠] -->
+            <div class="swiper-slide" data-category="part2">
+              <article class="work-card" onclick="openModal('./images/part2_card.jpg')">
+                <div class="card-thumb">
+                  <img src="./images/part2_card.jpg" onerror="this.src='https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'" alt="기업 비즈니스 명함 디자인">
+                </div>
+                <div class="card-body">
+                  <span class="part-badge">PART 02. EDITORIAL & PROMO</span>
+                  <h3 class="card-title">주요 대기업 5개사 비즈니스 명함 시리즈</h3>
+                  <p class="card-desc">셀트리온·대한항공·SK·현대·한화 기업별 CI 가이드라인을 준수하고 여백의 균형을 맞춘 실무 인쇄용 명함 레이아웃</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">기여도 100%</span>
+                    <span class="meta-tag">Illustrator</span>
+                    <span class="meta-tag">90x50mm 인쇄 규격</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide" data-category="part2">
+              <article class="work-card" onclick="openModal('./images/part2_menu.jpg')">
+                <div class="card-thumb">
+                  <img src="./images/part2_menu.jpg" onerror="this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80'" alt="블루베리 스무디 메뉴판">
+                </div>
+                <div class="card-body">
+                  <span class="part-badge">PART 02. EDITORIAL & PROMO</span>
+                  <h3 class="card-title">GEORGIA 카페 시즌 시그니처 음료 프로모션 메뉴판</h3>
+                  <p class="card-desc">블루베리 요거트 스무디의 상큼함을 강조하는 파스텔 보라·옐로우 보색 대비와 직관적인 가격표 그리드 디자인</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">기여도 100%</span>
+                    <span class="meta-tag">Photoshop</span>
+                    <span class="meta-tag">Illustrator</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide" data-category="part2">
+              <article class="work-card" onclick="openModal('./images/part2_news.png')">
+                <div class="card-thumb">
+                  <img src="./images/part2_news_thumb.png" onerror="this.src='https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80'" alt="민생회복 소비쿠폰 카드뉴스">
+                </div>
+                <div class="card-body">
+                  <span class="part-badge">PART 02. EDITORIAL & PROMO</span>
+                  <h3 class="card-title">전주시·행정안전부 민생회복 소비쿠폰 안내 카드뉴스 (6면)</h3>
+                  <p class="card-desc">지원 대상, 신청 기간, 사용 가능/불가 업종 등 복잡한 정책 정보를 아이콘과 O/X 시각 요소로 명확하게 구조화</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">기여도 100%</span>
+                    <span class="meta-tag">Illustrator</span>
+                    <span class="meta-tag">SNS 카드뉴스 6장</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- [PART 02 추가: 연세대 리플렛 프로젝트] -->
+        <div class="swiper-slide" data-category="part2">
+          <article class="work-card" onclick="openModal('./images/part2_leaflet_ysu_01.png', './images/part2_leaflet_ysu_02.png')">
+            <div class="card-thumb">
+              <!-- 대표로 보여줄 첫 번째 페이지 이미지 -->
+              <img src="./images/part2_leaflet_ysu_cover.png" onerror="this.src='https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'" alt="연세대 후배사랑 캠페인 리플렛">
+            </div>
+            <div class="card-body">
+              <span class="part-badge">PART 02. EDITORIAL & PROMO</span>
+              <h3 class="card-title">연세대학교 장학기금 모금<br>'연세후배사랑 캠페인' 리플렛</h3>
+              <p class="card-desc">기부 캠페인의 신뢰감을 주는 네이비·골드 톤앤매너 적용 및 장학기금 약정서 신청 서식의 직관적인 정보 위계 설계</p>
+              <div class="card-meta">
+                <span class="meta-tag">기여도 100%</span>
+                <span class="meta-tag">Illustrator</span>
+                <span class="meta-tag">Photoshop</span>
+                <span class="meta-tag">인쇄 편집 규격</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+            <!-- [PART 03: 포스터 & 유튜브 썸네일] -->
+            <div class="swiper-slide" data-category="part3">
+              <article class="work-card" onclick="openModal('./images/part3_thumb.png')">
+                <div class="card-thumb">
+                  <img src="./images/part3_thumb.png" onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80'" alt="주식 환율 유튜브 썸네일">
+                </div>
+                <div class="card-body">
+                  <span class="part-badge">PART 03. KEY VISUAL & ARTWORK</span>
+                  <h3 class="card-title">경제·재테크 유튜브 채널 클릭 유도형 썸네일 아트워크</h3>
+                  <p class="card-desc">'주가가 오르면 환율은 오를까?' 주제를 직관적으로 전달하기 위해 상승 화살표, 달러 지폐, 인물 실루엣을 역동적으로 합성</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">기여도 100%</span>
+                    <span class="meta-tag">Photoshop</span>
+                   </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide" data-category="part3">
+              <article class="work-card" onclick="openModal('./images/part3_poster.png')">
+                <div class="card-thumb">
+                  <img src="./images/part3_poster_thumb.png" onerror="this.src='https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80'" alt="공기업 채용 특강 포스터">
+                </div>
+                <div class="card-body">
+                  <span class="part-badge">PART 03. KEY VISUAL & ARTWORK</span>
+                  <h3 class="card-title">2026 공기업 블라인드/NCS 채용 취업특강 홍보 포스터</h3>
+                  <p class="card-desc">취업 준비생의 시선을 사로잡는 타이틀 타이포그래피와 일러스트 에셋, 체크리스트형 교육 일정표를 결합한 홍보물 설계</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">기여도 100%</span>
+                    <span class="meta-tag">Illustrator</span>
+                    <span class="meta-tag">Photoshop</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ======================== [4. EXPERIMENT (모션 & 숏폼 아카이브)] ======================== -->
+    <section class="experiment-section" id="experiment">
+      <div class="section-container">
+        <span class="section-eyebrow">03 / MOTION & SHORT-FORM ARCHIVE</span>
+        <div class="exp-header">
+          <h2 class="section-title left">4. EXPERIMENT</h2>
+          <p class="exp-sub">썸네일을 클릭하면 전체 화면으로 감상할 수 있습니다.</p>
+        </div>
+
+        <!-- 1단 통합 배치 컨테이너 -->
+        <div class="exp-two-col">
+          
+          <!-- 🟢 [상단] 세로형 유튜브 쇼츠 시리즈 (가운데 정렬) -->
+          <div class="exp-column">
+            <h3 class="col-heading" style="text-align: center;">SHORT-FORM VIDEO SERIES <span>(9:16 VERTICAL)</span></h3>
+            <div class="shorts-grid vertical-grid">
+              
+             <!-- 🟢 세 번째 쇼츠 아이템 (새로 추가할 영역) -->
+    <article class="video-card vertical" onclick="openVideoModal('./videos/lion_day.mp4')">
+      <div class="video-wrap">
+        <video muted loop playsinline poster="./images/lion_day_thumb.png">
+          <source src="./videos/lion_day.mp4" type="video/mp4">
+        </video>
+        <span class="duration-badge" data-time="▶ 0:57">▶ 0:57</span>
+      </div>
+      <div class="video-info">
+    <h4>3D 캐릭터 일상 쇼츠 &lt;사자의 하루&gt;</h4>
+    <p>생성형 AI를 활용한 3D 캐릭터 에셋 제작 및 일상 스토리텔링의 재미를 더하는 쇼츠 컷·자막 편집</p>
+    <div class="card-meta">
+        <span class="meta-tag">1인 제작 (AI 디렉팅·편집)</span>
+        <span class="meta-tag">Generative AI</span>
+        <span class="meta-tag">CapCut</span>
+        <span class="meta-tag">Premiere Pro</span>
+    </div>
+    </div>
+  </article>
+             
+             
+              <!-- 쇼츠 아이템 01 -->
+              <article class="video-card vertical" onclick="openVideoModal('./videos/shorts_video_01.mp4')">
+                <div class="video-wrap">
+                  <video muted loop playsinline poster="./images/shorts_thumb_01.png">
+                    <source src="./videos/shorts_video_01.mp4" type="video/mp4">
+                  </video>
+                  <span class="duration-badge" data-time="▶ 1:15">▶ 1:15</span>
+                </div>
+                <div class="video-info">
+                  <h4>심리 유튜브 쇼츠 〈속마음 코드〉 Ep.06</h4>
+                  <p>생성형 AI 기반 대본·비주얼 에셋 디렉팅 및 몰입감을 높이는 1분 쇼츠 컷·자막 편집</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">1인 제작 (AI 디렉팅·편집)</span>
+                    <span class="meta-tag">Generative AI</span>
+                    <span class="meta-tag">Premiere Pro</span>
+                  </div>
+                </div>
+              </article>
+              <!-- 필요시 여기에 쇼츠 아이템 02 추가 가능 (자동으로 가운데 정렬됨) -->
+                       
+<!-- 🟢 두 번째 쇼츠 아이템 (새로 추가할 영역) -->
+    <article class="video-card vertical" onclick="openVideoModal('./videos/shorts_video_02.mp4')">
+      <div class="video-wrap">
+        <video muted loop playsinline poster="./images/shorts_thumb_02.png">
+          <source src="./videos/shorts_video_02.mp4" type="video/mp4">
+        </video>
+        <span class="duration-badge" data-time="▶ 0:30">▶ 0:30</span>
+      </div>
+      <div class="video-info">
+        <h4>한전KDN 안전 캠페인 쇼츠 〈작업중지권〉</h4>
+        <p>생성형 AI를 활용한 2.5D 비주얼 에셋 제작 및 공익 메시지 전달력을 높이는 모션·자막 편집&nbsp;- 산업안전 숏폼 공모전 출품작(2026)</p>
+        <div class="card-meta">
+        <span class="meta-tag">1인 제작 (AI 디렉팅·편집)</span>
+        <span class="meta-tag">Generative AI</span>
+        <span class="meta-tag">Premiere Pro</span>
+        <span class="meta-tag">CapCut</span>
+      </div>
+      </div>
+    </article>
+
+    
+   </div> <!-- 💡 추가 1: 상단 shorts-grid vertical-grid 닫기 -->
+  </div> <!-- 💡 추가 2: 상단 exp-column 닫기 -->   
+
+
+          <!-- 🔵 [하단] 가로형 모션 그래픽 & 타이포그래피 (2x2 그리드) -->
+          <div class="exp-column">
+            <h3 class="col-heading">MOTION GRAPHIC & TYPOGRAPHY <span>(16:9 WIDE)</span></h3>
+            <div class="shorts-grid horizontal-grid">
+              
+              <!-- 모션 아이템 01: 마켓컬리 -->
+              <article class="video-card" onclick="openVideoModal('./videos/motion_kurly.mp4')">
+                <div class="video-wrap">
+                  <video muted loop playsinline poster="./images/motion_kurly_thumb.png">
+                    <source src="./videos/motion_kurly.mp4" type="video/mp4">
+                  </video>
+                  <span class="duration-badge" data-time="▶ 0:30">▶ 0:30</span>
+                </div>
+                <div class="video-info">
+                  <h4>마켓컬리 앱 프로모션 모션 그래픽</h4>
+                  <p>타겟 고객의 공감대 형성부터 앱 UI 시뮬레이션까지 이어지는 2D 모션 광고</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">모션 디자인 100%</span>
+                    <span class="meta-tag">After Effects</span>
+                    <span class="meta-tag">Illustrator</span>
+                    <span class="meta-tag">Photoshop</span>
+                  </div>
+                </div>
+              </article>
+
+             
+              <!-- 모션 아이템 02: 넷플릭스 스타일 웨딩 영상 -->
+              <article class="video-card" onclick="openVideoModal('./videos/motion_netflix.mp4')">
+                <div class="video-wrap">
+                  <video muted loop playsinline poster="./images/wedding_thumb.png">
+                    <source src="./videos/motion_netflix.mp4" type="video/mp4">
+                  </video>
+                  <span class="duration-badge" data-time="▶ 0:39">▶ 0:39</span>
+                </div>
+                <div class="video-info">
+                  <h4>넷플릭스 스타일 웨딩 영상</h4>
+                  <p>넷플릭스 UI를 활용한 독창적인 프로필 선택 화면 및 웨딩 트레일러 연출</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">모션 그래픽</span>
+                    <span class="meta-tag">After Effects</span>
+                    <span class="meta-tag">Photoshop</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 모션 아이템 03: 라인이 늘어나는 텍스트 효과 -->
+              <article class="video-card" onclick="openVideoModal('./videos/motion_line_text.mp4')">
+                <div class="video-wrap">
+                  <video muted loop playsinline poster="./images/text_effect_thumb.png">
+                    <source src="./videos/motion_line_text.mp4" type="video/mp4">
+                  </video>
+                  <span class="duration-badge" data-time="▶ 0:06">▶ 0:06</span>
+                </div>
+                <div class="video-info">
+                  <h4>라인이 늘어나는 텍스트 효과</h4>
+                  <p>텍스트와 함께 연동되어 늘어나는 라인을 활용한 다이내믹 타이포그래피 모션</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">타이포그래피</span>
+                    <span class="meta-tag">After Effects</span>
+                  </div>
+                </div>
+              </article>
+              
+              <!-- 모션 아이템 04: 라인이 늘어나는 텍스트 효과 --> 
+              <article class="video-card" onclick="openVideoModal('./videos/long_assassin.mp4')">
+                <div class="video-wrap">
+                  <video muted loop playsinline poster="./images/long_assassin_thumb.png">
+                    <source src="./videos/long_assassin.mp4" type="video/mp4">
+                  </video>
+                  <span class="duration-badge" data-time="▶ 1:53">▶ 1:53</span>
+                </div>
+                <div class="video-info">
+                  <h4>영화 &lt;암살자(들)&gt; 이슈 분석 모션 그래픽</h4>
+                  <p>1974년 피격 사건을 다룬 영화의 3가지 핵심 쟁점을 속도감 있는 컷 편집과 다이내믹한 타이포그래피로 요약한 정보성 영상</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">인포그래픽</span>
+                    <span class="meta-tag">모션 그래픽</span>
+                    <span class="meta-tag">Premiere Pro</span>
+                </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== [5. CONTACT & FOOTER] ==================== -->
+  <!-- 수정 반영: 이력서 PDF 다운로드 삭제, 직통 연락처 및 유튜브 채널 링크 배치 -->
+  <footer class="contact-section" id="contact">
+    <div class="section-container">
+      <span class="section-eyebrow center">04 / GET IN TOUCH</span>
+      <h2 class="contact-heading">LET'S WORK TOGETHER</h2>
+      <p class="contact-sub">새로운 프로젝트 협업이나 채용 관련 문의를 기다립니다. 클릭 시 연락처가 클립보드에 복사됩니다.</p>
+
+      <!-- 연락처 클릭 복사 카드 -->
+      <div class="contact-Direct-box">
+        <button class="copy-item" data-copy="010-1234-5678" aria-label="전화번호 복사">
+          <span class="item-label">PHONE</span>
+          <strong class="item-value">000-0000-0000</strong>
+          <span class="copy-hint">📋 클릭하여 복사</span>
+        </button>
+
+        <button class="copy-item" data-copy="designer@email.com" aria-label="이메일 복사">
+          <span class="item-label">E-MAIL</span>
+          <strong class="item-value">ariwuse@naver.com</strong>
+          <span class="copy-hint">📋 클릭하여 복사</span>
+        </button>
+      </div>
+
+      <!-- 외부 채널 바로가기 링크 (유튜브 강조) -->
+      <div class="social-links">
+        <a href="https://www.youtube.com/@%EC%86%8D%EB%A7%88%EC%9D%8C%EC%BD%94%EB%93%9C" target="_blank" rel="noopener noreferrer" class="social-btn youtube">
+          <span class="yt-icon">▶</span> YouTube 채널 (속마음 코드) 바로가기
+        </a>
+        <a href="https://blog.naver.com/ariwuse" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span class="yt-icon">▶</span> 네이버 블로그(믿음, 소망, 사랑) 바로가기
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 
+          BAEK SEUNG TAK. ALL RIGHTS RESERVED.</p>
+        <a href="#hero" class="back-to-top">BACK TO TOP ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 클립보드 복사 알림 토스트 -->
+  <div id="toast" class="toast-msg">클립보드에 복사되었습니다!</div>
+
+<!-- ==================== [상세 이미지 모달창] ==================== -->
+  <div id="image-modal" class="modal-overlay" onclick="closeModal()">
+    <button class="modal-close" onclick="closeModal()" aria-label="닫기">✕</button>
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <img id="modal-image" src="" alt="포트폴리오 상세 이미지">
+    </div>
+  </div>
+
+  <!-- 3. Swiper.js & 메인 스크립트 연결 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+
+<!-- 동영상 모달 팝업 구조 -->
+<div id="video-modal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); align-items: center; justify-content: center;">
+    <span onclick="closeVideoModal()" style="position: absolute; top: 20px; right: 40px; color: white; font-size: 40px; cursor: pointer; z-index: 10000;">&times;</span>
+    <video id="modal-video" controls autoplay style="max-height: 80vh; width: 80vw; max-width: 1200px; border-radius: 12px; outline: none; box-shadow: 0 10px 30px rgba(0,0,0,0.8);"></video>
+        <source src="" type="video/mp4">
+    </video>
+</div>
+</body>
+</html>
