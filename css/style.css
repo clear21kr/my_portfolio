@@ -555,13 +555,16 @@ a {
 }
 
 .tab-btn:hover {
-  color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); 
 }
 
 .tab-btn.active {
-  background-color: #2e2e2e;
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: #E8833A; /* 🚨 소프트 오렌지 컬러 적용 */
+    color: #ffffff;
+    font-weight: 700;
+    /* 그림자에도 살짝 오렌지빛을 섞어 버튼이 은은하게 빛나는 효과 연출 */
+    box-shadow: 0 4px 12px rgba(232, 131, 58, 0.3); 
 }
 
 /* 좌우 넘김 버튼을 넓어진 슬라이더 안쪽에 배치 */
@@ -598,12 +601,12 @@ a {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8) !important; /* 그림자를 진하게 넣어 입체감 극대화 */
 }
 
-/* 마우스 올렸을 때 (초록계열 옅은 형광색 유지) */
+/* 마우스 올렸을 때 (소프트 오렌지 포인트 컬러 적용) */
 .nav-btn:hover {
-    background-color: #ccff33 !important; 
-    border-color: #ccff33 !important;
-    color: #111111 !important; 
-    transform: scale(1.1);
+    background-color: #E8833A !important; /* 🚨 소프트 오렌지 컬러로 변경 */
+    border-color: #E8833A !important;
+    color: #ffffff !important; /* 🚨 오렌지 배경에 잘 보이도록 화살표 색상을 흰색으로 변경 */
+    transform: scale(1.1); /* 기존에 있던 살짝 커지는 애니메이션 효과는 그대로 유지 */
 }
 
 .nav-btn.swiper-button-disabled {
